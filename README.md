@@ -1,59 +1,69 @@
-# CorelDRAW Organizador de Artes
+# **Organizador de Artes para CorelDRAW**
 
-## 📌 Sobre o projeto
+Macro VBA para CorelDRAW que automatiza a organização de **grandes quantidades de artes do mesmo tamanho** em uma única mídia.
 
-Este projeto surgiu de uma necessidade prática no meu trabalho com fechamento de arquivos para produção.
+## **O problema**
 
-O processo de preparação das artes estava demorando porque era necessário **copiar e ajustar uma arte por vez**, mesmo quando todas as artes possuíam o mesmo tamanho e precisavam seguir o mesmo padrão.
+Quando um PDF possui 100, 200 ou mais páginas com artes do mesmo tamanho, é necessário repetir manualmente tarefas como copiar, redimensionar, posicionar e, em alguns casos, utilizar PowerClip.
 
-Quando a quantidade chegava a centenas ou até **1.000 artes**, realizar esse processo manualmente se tornava extremamente demorado e, muitas vezes, praticamente impossível conseguir finalizar tudo dentro do prazo para envio à produção.
+Com muitas páginas, esse processo se torna repetitivo e burocrático.
 
-Foi a partir desse problema que **pensei e desenvolvi a solução**: automatizar parte desse processo para agilizar o fechamento e diminuir o tempo entre o recebimento das artes e o envio para produção.
+## **A solução**
 
-## 🎯 Objetivo
+O macro automatiza esse processo diretamente no CorelDRAW, aproveitando os recursos do **VBA**, sem depender de ferramentas externas.
 
-* Agilizar o fechamento das artes;
-* Reduzir tarefas manuais e repetitivas;
-* Facilitar a organização dos arquivos;
-* Diminuir o tempo necessário para preparar grandes quantidades de artes;
-* Tornar o envio para produção mais rápido.
+Ele:
 
-## 💡 A solução
+* Redimensiona as artes.
+* Organiza em linhas e colunas.
+* Calcula automaticamente a altura da mídia.
+* Permite definir espaçamento e margem.
+* Adiciona borda mínima.
+* Mantém as páginas originais.
+* Não utiliza `Copy/Paste` para duplicar as artes.
 
-A ideia surgiu de uma situação simples:
+**PDF com muitas páginas → CorelDRAW → montagem automática → produção.**
 
-> **Se as artes seguem o mesmo tamanho e padrão, por que fazer o mesmo ajuste manualmente em cada uma?**
+## **Configuração atual**
 
-Em uma demanda pequena, realizar esse processo manualmente pode parecer simples. Porém, quando são centenas de arquivos — chegando a **1.000 artes** — o tempo necessário aumenta consideravelmente e pode comprometer o prazo de entrega.
+* Mídia: **100 cm de largura**
+* Artes: **15,5 × 15,5 cm**
+* Espaçamento: **0 cm**
+* Margem: **0 cm**
+* Borda: **mínima**
+* Altura: **automática**
 
-A solução foi pensar em uma forma de **automatizar as etapas repetitivas do fechamento**, permitindo que o processo fosse realizado de maneira mais rápida e organizada.
+### **Como usar**
 
-## 🤖 Desenvolvimento com apoio de IA
+1. Importe o PDF para o CorelDRAW, deixando uma arte por página.
+2. Abra o VBA.
+3. Importe ou cole `OrganizadorArtes.bas`.
+4. Se necessário, altere os parâmetros no início do código.
+5. Execute `OrganizarArtes_Configuravel`.
 
-A **ideia, identificação do problema e definição da solução partiram de mim**.
+### **Configuração**
 
-Para transformar a solução em código, utilizei o **ChatGPT como ferramenta de apoio ao desenvolvimento**. O código foi desenvolvido com auxílio da IA, enquanto eu conduzi o processo a partir da necessidade que identifiquei, da lógica que queria aplicar e dos testes realizados para verificar o funcionamento da solução.
+```vb id="8j1s8j"
+Const MIDIA_LARGURA_CM As Double = 100
+Const ARTE_LARGURA_CM As Double = 15.5
+Const ARTE_ALTURA_CM As Double = 15.5
+Const ESPACO_CM As Double = 0
+Const MARGEM_CM As Double = 0
+Const USAR_BORDA As Boolean = True
+Const TAMANHO_EXATO As Boolean = True
+```
 
-O objetivo também foi utilizar o projeto como uma forma prática de aprender sobre desenvolvimento, resolução de problemas e automação.
+Basta alterar esses valores para outro serviço.
 
-## 📚 O que aprendi
+## **Objetivo**
 
-Durante o desenvolvimento, tive contato com:
+Ganhar tempo na **produção e no fechamento de arquivos**, principalmente quando existe uma grande quantidade de artes iguais ou do mesmo tamanho.
 
-* Resolução de um problema real através da programação;
-* Automação de tarefas repetitivas;
-* Estruturação de um projeto;
-* Pesquisa e análise de soluções;
-* Testes e identificação de problemas;
-* Uso de inteligência artificial como ferramenta de apoio ao desenvolvimento.
+O projeto nasceu de uma necessidade real de produção gráfica e busca aproveitar o VBA disponível no próprio CorelDRAW para automatizar tarefas repetitivas.
 
-## 🛠️ Tecnologias
+## **Tecnologias**
 
 * CorelDRAW
-* [Tecnologia utilizada no projeto]
+* VBA (Visual Basic for Applications)
 
-## 👨‍💻 Autor
-
-**Gabriel Douglas**
-
-Estudante de Análise e Desenvolvimento de Sistemas e desenvolvedor em formação, buscando aplicar programação na resolução de problemas reais do dia a dia.
+**Palavras-chave:** CorelDRAW, VBA, macro CorelDRAW, PDF, PDF 100 páginas, PDF 200 páginas, organizar PDF, fechamento de arquivo, produção gráfica, montagem de artes, automação CorelDRAW, pré-impressão.
