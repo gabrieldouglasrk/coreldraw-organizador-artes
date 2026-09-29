@@ -43,7 +43,7 @@ Ele:
 
 ### **Configuração**
 
-```vb id="8j1s8j"
+```vb
 Const MIDIA_LARGURA_CM As Double = 100
 Const ARTE_LARGURA_CM As Double = 15.5
 Const ARTE_ALTURA_CM As Double = 15.5
@@ -65,5 +65,13 @@ O projeto nasceu de uma necessidade real de produção gráfica e busca aproveit
 
 * CorelDRAW
 * VBA (Visual Basic for Applications)
+
+## **Uso de IA**
+
+A ideia do projeto, a necessidade de produção e os requisitos de funcionamento foram definidos a partir de uma necessidade real.
+
+A **IA foi utilizada como ferramenta de apoio para desenvolver, revisar e ajustar o código VBA**, além de auxiliar na identificação e correção de problemas encontrados durante os testes.
+
+O código foi testado e ajustado no **CorelDRAW** conforme a necessidade do processo de produção.
 
 **Palavras-chave:** CorelDRAW, VBA, macro CorelDRAW, PDF, PDF 100 páginas, PDF 200 páginas, organizar PDF, fechamento de arquivo, produção gráfica, montagem de artes, automação CorelDRAW, pré-impressão.
